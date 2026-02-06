@@ -618,7 +618,7 @@ body {
   left: 0;
   width: 4px;
   height: 100%;
-  background: linear-gradient(180deg, var(--accent) 0%, var(--primary) 100%);
+  background: var(--accent);
 }
 
 /* Tech card image container */
