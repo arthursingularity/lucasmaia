@@ -101,7 +101,7 @@ export default function About() {
                     <div className="grid md:grid-cols-2 gap-8">
                         <div className="relative rounded-2xl overflow-hidden shadow-xl group">
                             <Image
-                                src="/images/fotolucas1.jfif"
+                                src="/images/fotolucas1.jpg"
                                 alt="Dr. Lucas Maia realizando tratamento cervical"
                                 width={600}
                                 height={400}
@@ -115,7 +115,7 @@ export default function About() {
                         </div>
                         <div className="relative rounded-2xl overflow-hidden shadow-xl group">
                             <Image
-                                src="/images/fotolucas2.jfif"
+                                src="/images/fotolucas2.jpg"
                                 alt="Dr. Lucas Maia em curso de especialização"
                                 width={600}
                                 height={400}

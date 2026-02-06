@@ -62,7 +62,7 @@ export default function HowItWorks() {
                     <div className="relative">
                         <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                             <Image
-                                src="/images/fotolucas1.jfif"
+                                src="/images/fotolucas1.jpg"
                                 alt="Dr. Lucas Maia realizando tratamento"
                                 width={600}
                                 height={700}
