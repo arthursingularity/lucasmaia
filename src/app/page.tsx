@@ -1,5 +1,6 @@
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
+import Videos from '@/components/Videos';
 import ForWho from '@/components/ForWho';
 import HowItWorks from '@/components/HowItWorks';
 import Conditions from '@/components/Conditions';
@@ -16,6 +17,7 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
+        <Videos />
         <ForWho />
         <HowItWorks />
         <Conditions />

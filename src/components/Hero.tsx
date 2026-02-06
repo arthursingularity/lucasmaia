@@ -1,6 +1,13 @@
-import Image from 'next/image';
+'use client';
+
+import { useState } from 'react';
 
 export default function Hero() {
+    const [isVideoPlaying, setIsVideoPlaying] = useState(false);
+
+    // URL do vídeo VSL - substituir pelo link real
+    const vslVideoUrl = 'https://res.cloudinary.com/dsgkc7epl/video/upload/f_mp4,q_auto/video1_e4gn2r.mp4'; // Adicionar link do VSL aqui (formato embed)
+
     return (
         <section id="home" className="relative min-h-screen gradient-hero overflow-hidden">
             {/* Background decorations */}
@@ -38,7 +45,7 @@ export default function Hero() {
                         {/* Tagline */}
                         <p className="heading-3 text-white/90 font-light mb-4 animate-fade-in-up animation-delay-200">
                             Avaliação detalhada. Tratamento individual.{' '}
-                            <span className="font-semibold text-[var(--accent-light)]">Movimento sem medo.</span>
+                            <span className="font-semibold text-gradient">Movimento sem medo.</span>
                         </p>
 
                         {/* Description */}
@@ -88,45 +95,69 @@ export default function Hero() {
                                 <svg className="w-5 h-5 text-[var(--accent)]" fill="currentColor" viewBox="0 0 20 20">
                                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                                 </svg>
-                                <span className="body-sm">McKenzie & Mulligan</span>
+                                <span className="body-sm">McKenzie &amp; Mulligan</span>
                             </div>
                         </div>
                     </div>
 
-                    {/* Image */}
-                    <div className="relative hidden lg:block animate-fade-in animation-delay-300">
+                    {/* VSL Video */}
+                    <div className="relative animate-fade-in animation-delay-300">
                         <div className="relative">
                             {/* Decorative ring */}
-                            <div className="absolute -inset-4 bg-gradient-to-br from-[var(--accent)]/20 to-transparent rounded-full blur-2xl"></div>
+                            <div className="absolute -inset-4 bg-gradient-to-br from-[var(--accent)]/20 to-transparent rounded-3xl blur-2xl"></div>
 
-                            {/* Main image container */}
-                            <div className="relative rounded-2xl overflow-hidden shadow-2xl border-2 border-white/10">
-                                <Image
-                                    src="/images/fotoprincipal2.jfif"
-                                    alt="Dr. Lucas Maia - Fisioterapeuta"
-                                    width={500}
-                                    height={600}
-                                    className="w-full h-auto object-cover"
-                                    priority
-                                />
+                            {/* Video container - Aspect ratio 9:16 para vídeo vertical */}
+                            <div
+                                className="relative rounded-2xl overflow-hidden shadow-2xl border-2 border-white/10 mx-auto cursor-pointer group"
+                                style={{ aspectRatio: '9/16', maxHeight: '550px', maxWidth: '310px' }}
+                                onClick={() => setIsVideoPlaying(true)}
+                            >
+                                {isVideoPlaying && vslVideoUrl ? (
+                                    // Video Player
+                                    <video
+                                        src={vslVideoUrl}
+                                        className="absolute inset-0 w-full h-full object-cover"
+                                        controls
+                                        autoPlay
+                                        playsInline
+                                    />
+                                ) : (
+                                    // Thumbnail com botão de play
+                                    <div className="absolute inset-0">
+                                        {/* Thumbnail Image */}
+                                        <img
+                                            src="/images/thumb1.png"
+                                            alt="VSL Thumbnail"
+                                            className="absolute inset-0 w-full h-full object-cover"
+                                        />
 
-                                {/* Overlay gradient */}
-                                <div className="absolute inset-0 bg-gradient-to-t from-[var(--primary-dark)]/50 to-transparent"></div>
+                                        {/* Overlay escuro para contraste */}
+                                        <div className="absolute inset-0 bg-black/30"></div>
+
+                                        {/* Play Button */}
+                                        <div className="absolute inset-0 flex items-center justify-center">
+                                            <div className="relative z-10 w-20 h-20 rounded-full bg-[var(--accent)] flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-xl">
+                                                <svg
+                                                    className="w-8 h-8 text-white ml-1"
+                                                    fill="currentColor"
+                                                    viewBox="0 0 24 24"
+                                                >
+                                                    <path d="M8 5v14l11-7z" />
+                                                </svg>
+                                                {/* Pulse animation */}
+                                                <div className="absolute inset-0 rounded-full bg-[var(--accent)] animate-ping opacity-25"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                )}
                             </div>
 
-                            {/* Floating card */}
-                            <div className="absolute -bottom-6 -left-6 bg-white rounded-xl p-4 shadow-xl animate-float">
-                                <div className="flex items-center gap-3">
-                                    <div className="w-12 h-12 gradient-accent rounded-full flex items-center justify-center">
-                                        <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                                        </svg>
-                                    </div>
-                                    <div>
-                                        <p className="stat-number text-3xl">97%</p>
-                                        <p className="caption">de sucesso sem cirurgia</p>
-                                    </div>
-                                </div>
+                            {/* Badge superior */}
+                            <div className="absolute -top-3 -right-3 bg-[var(--accent)] text-white px-4 py-2 rounded-full shadow-lg hidden lg:flex items-center gap-2">
+                                <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                                <span className="text-sm font-semibold">VSL</span>
                             </div>
                         </div>
                     </div>
@@ -135,3 +166,4 @@ export default function Hero() {
         </section>
     );
 }
+
