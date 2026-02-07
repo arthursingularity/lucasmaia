@@ -7,6 +7,7 @@ import Conditions from '@/components/Conditions';
 import Technologies from '@/components/Technologies';
 import FirstConsult from '@/components/FirstConsult';
 import About from '@/components/About';
+import Reviews from '@/components/Reviews';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 import WhatsAppFloat from '@/components/WhatsAppFloat';
@@ -24,6 +25,7 @@ export default function Home() {
         <Technologies />
         <FirstConsult />
         <About />
+        <Reviews />
         <Contact />
       </main>
       <Footer />
