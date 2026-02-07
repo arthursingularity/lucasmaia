@@ -674,3 +674,462 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+
+/* ===== CARTÃO DIGITAL - REDESIGN MODERNO ===== */
+.cartao-container {
+  min-height: 100vh;
+  min-height: 100dvh;
+  background: linear-gradient(180deg, #001a1a 0%, #002828 50%, #003333 100%);
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1.5rem 3rem;
+}
+
+.cartao-background-pattern {
+  position: fixed;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 20% 80%, rgba(194, 132, 51, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(0, 100, 100, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 50% 50%, rgba(194, 132, 51, 0.03) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+/* Linhas decorativas animadas */
+.cartao-lines {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.cartao-line {
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent 0%, rgba(194, 132, 51, 0.2) 50%, transparent 100%);
+  animation: cartaoLineMove 8s ease-in-out infinite;
+}
+
+.cartao-line:nth-child(1) {
+  left: 10%;
+  animation-delay: 0s;
+}
+
+.cartao-line:nth-child(2) {
+  left: 30%;
+  animation-delay: 2s;
+}
+
+.cartao-line:nth-child(3) {
+  left: 50%;
+  animation-delay: 4s;
+}
+
+.cartao-line:nth-child(4) {
+  left: 70%;
+  animation-delay: 1s;
+}
+
+.cartao-line:nth-child(5) {
+  left: 90%;
+  animation-delay: 3s;
+}
+
+@keyframes cartaoLineMove {
+
+  0%,
+  100% {
+    opacity: 0.3;
+    transform: translateY(-10%);
+  }
+
+  50% {
+    opacity: 0.6;
+    transform: translateY(10%);
+  }
+}
+
+.cartao-content {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 420px;
+  width: 100%;
+  animation: cartaoFadeIn 0.8s ease-out;
+}
+
+@keyframes cartaoFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== FOTO REDONDA ===== */
+.cartao-photo-container {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.cartao-photo-wrapper {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  padding: 4px;
+  background: linear-gradient(135deg, #c28433 0%, #e7c48c 50%, #c28433 100%);
+  box-shadow:
+    0 0 0 4px rgba(0, 40, 40, 0.8),
+    0 10px 40px rgba(0, 0, 0, 0.4),
+    0 0 60px rgba(194, 132, 51, 0.2);
+  animation: cartaoPhotoGlow 4s ease-in-out infinite;
+}
+
+@keyframes cartaoPhotoGlow {
+
+  0%,
+  100% {
+    box-shadow: 0 0 0 4px rgba(0, 40, 40, 0.8), 0 10px 40px rgba(0, 0, 0, 0.4), 0 0 60px rgba(194, 132, 51, 0.2);
+  }
+
+  50% {
+    box-shadow: 0 0 0 4px rgba(0, 40, 40, 0.8), 0 10px 40px rgba(0, 0, 0, 0.4), 0 0 80px rgba(194, 132, 51, 0.35);
+  }
+}
+
+.cartao-photo {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+.cartao-verified-badge {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  width: 36px;
+  height: 36px;
+  background: linear-gradient(135deg, #c28433 0%, #9a6a28 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  border: 3px solid #002828;
+}
+
+.cartao-verified-badge svg {
+  color: white;
+  width: 18px;
+  height: 18px;
+}
+
+/* ===== INFO SECTION ===== */
+.cartao-info-section {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.cartao-name {
+  font-family: var(--font-display), Georgia, serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+  margin: 0 0 0.5rem;
+  letter-spacing: -0.02em;
+}
+
+.cartao-title {
+  font-size: 1rem;
+  color: #c28433;
+  margin: 0 0 0.375rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.cartao-subtitle {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0 0 0.75rem;
+}
+
+.cartao-crefito {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.05);
+  padding: 0.375rem 0.875rem;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* ===== LINKS GRID ===== */
+.cartao-links-section {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.cartao-link-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  padding: 1rem 1.25rem;
+  margin-bottom: 0.75rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  backdrop-filter: blur(10px);
+  animation: cartaoSlideIn 0.5s ease-out forwards;
+  opacity: 0;
+}
+
+.cartao-link-item:hover {
+  background: rgba(194, 132, 51, 0.1);
+  border-color: rgba(194, 132, 51, 0.3);
+  transform: translateY(-2px) scale(1.01);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes cartaoSlideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.cartao-link-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.cartao-link-item:hover .cartao-link-icon {
+  transform: scale(1.1);
+}
+
+.cartao-link-icon svg {
+  width: 24px;
+  height: 24px;
+  color: white;
+}
+
+.cartao-link-icon.whatsapp {
+  background: linear-gradient(135deg, #25D366, #128C7E);
+}
+
+.cartao-link-icon.instagram {
+  background: linear-gradient(135deg, #F58529, #DD2A7B, #8134AF);
+}
+
+.cartao-link-icon.email {
+  background: linear-gradient(135deg, #c28433, #9a6a28);
+}
+
+.cartao-link-icon.website {
+  background: linear-gradient(135deg, #003333, #004d4d);
+}
+
+.cartao-link-icon.phone {
+  background: linear-gradient(135deg, #4285F4, #34A853);
+}
+
+.cartao-link-icon.location {
+  background: linear-gradient(135deg, #EA4335, #c5221f);
+}
+
+.cartao-link-icon.calendar {
+  background: linear-gradient(135deg, #7C3AED, #5B21B6);
+}
+
+.cartao-link-content {
+  flex: 1;
+  text-align: left;
+}
+
+.cartao-link-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: white;
+  margin: 0 0 0.125rem;
+}
+
+.cartao-link-description {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0;
+}
+
+.cartao-link-arrow {
+  color: rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.cartao-link-item:hover .cartao-link-arrow {
+  color: #c28433;
+  transform: translateX(4px);
+}
+
+/* ===== BOTÃO SALVAR CONTATO ===== */
+.cartao-save-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+  width: 100%;
+  padding: 1rem 2rem;
+  background: linear-gradient(135deg, #c28433 0%, #9a6a28 100%);
+  color: white;
+  border: none;
+  border-radius: 14px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(194, 132, 51, 0.3);
+  margin-bottom: 2rem;
+}
+
+.cartao-save-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 30px rgba(194, 132, 51, 0.5);
+}
+
+.cartao-save-btn:active {
+  transform: translateY(-1px);
+}
+
+.cartao-save-btn svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* ===== DIVIDER ===== */
+.cartao-divider {
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(194, 132, 51, 0.5), transparent);
+  margin: 0 auto 1.5rem;
+}
+
+/* ===== FOOTER / LOGO ===== */
+.cartao-footer {
+  text-align: center;
+}
+
+.cartao-logo {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  font-family: var(--font-display), Georgia, serif;
+  margin-bottom: 1rem;
+}
+
+.cartao-logo-l {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #c28433;
+  line-height: 1;
+}
+
+.cartao-logo-m {
+  font-size: 2rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1;
+  margin-left: -0.2rem;
+}
+
+.cartao-footer-text {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.35);
+  margin: 0;
+}
+
+/* ===== SOCIAL ICONS GRID ===== */
+.cartao-social-grid {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.cartao-social-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.cartao-social-btn:hover {
+  background: rgba(194, 132, 51, 0.2);
+  border-color: rgba(194, 132, 51, 0.4);
+  transform: translateY(-3px);
+}
+
+.cartao-social-btn svg {
+  width: 22px;
+  height: 22px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 380px) {
+  .cartao-container {
+    padding: 1.5rem 1rem 2rem;
+  }
+
+  .cartao-photo-wrapper {
+    width: 130px;
+    height: 130px;
+  }
+
+  .cartao-name {
+    font-size: 2rem;
+  }
+
+  .cartao-link-item {
+    padding: 0.875rem 1rem;
+  }
+
+  .cartao-link-icon {
+    width: 42px;
+    height: 42px;
+  }
+}
