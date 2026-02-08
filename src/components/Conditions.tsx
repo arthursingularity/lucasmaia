@@ -48,7 +48,7 @@ export default function Conditions() {
                 {featuredCondition && (
                     <div className="mb-16">
                         <div className="bg-white rounded-3xl shadow-xl overflow-hidden">
-                            <div className="bg-primary p-6 sm:p-8">
+                            <div className="bg-primary-light p-6 sm:p-8">
                                 <div className="flex items-center gap-4">
                                     <div className="w-16 h-16 rounded-xl bg-accent flex items-center justify-center">
                                         <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -79,9 +79,6 @@ export default function Conditions() {
                                             <h4 className="heading-5 text-[var(--primary)] mb-2">{featuredCondition.question}</h4>
                                             <p className="heading-4 text-[var(--foreground)] mb-4">{featuredCondition.answer}</p>
                                             <div className="flex items-center gap-4 p-4 bg-white rounded-lg">
-                                                <div className="flex-shrink-0">
-                                                    <span className="stat-number">97%</span>
-                                                </div>
                                                 <p className="body-sm text-[var(--muted)]">{featuredCondition.stat}</p>
                                             </div>
                                         </div>

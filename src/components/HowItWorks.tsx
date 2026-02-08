@@ -123,7 +123,7 @@ export default function HowItWorks() {
                 </div>
 
                 {/* Benefits section */}
-                <div className="gradient-primary rounded-3xl p-8 sm:p-12">
+                <div className="bg-primary rounded-3xl p-8 sm:p-12">
                     <div className="grid lg:grid-cols-2 gap-12 items-center">
                         <div>
                             <span className="eyebrow text-[var(--accent-light)] mb-4 block">Resultados</span>
