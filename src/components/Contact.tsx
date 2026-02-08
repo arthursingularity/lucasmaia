@@ -97,11 +97,11 @@ export default function Contact() {
                             <div className="space-y-4">
                                 <div className="flex items-center justify-between p-4 bg-white rounded-xl">
                                     <span className="body-base font-medium text-[var(--foreground)]">Segunda a Sexta</span>
-                                    <span className="heading-5 text-[var(--accent)]">08:00 - 20:00</span>
+                                    <span className="heading-5 text-[var(--accent)]">09:00 - 19:00</span>
                                 </div>
                                 <div className="flex items-center justify-between p-4 bg-white rounded-xl">
                                     <span className="body-base font-medium text-[var(--foreground)]">Sábado</span>
-                                    <span className="heading-5 text-[var(--accent)]">08:00 - 12:00</span>
+                                    <span className="heading-5 text-[var(--accent)]">09:00 - 13:00</span>
                                 </div>
                                 <div className="flex items-center justify-between p-4 bg-white rounded-xl">
                                     <span className="body-base font-medium text-[var(--foreground)]">Domingo</span>
