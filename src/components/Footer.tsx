@@ -30,7 +30,7 @@ export default function Footer() {
                                 href="https://www.instagram.com/dr.lucasmaia_/"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[var(--accent)] transition-colors"
+                                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#833AB4] transition-colors"
                                 aria-label="Instagram"
                             >
                                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
