@@ -36,10 +36,17 @@ export default function Header() {
                     {/* Logo */}
                     <Link href="#home" className="flex items-center gap-3">
                         <div className="w-12 h-12 flex items-center justify-center">
+                            {/* Mobile: Logo com texto */}
+                            <img
+                                src="/images/logos/SECUNDARIA 03(1).png"
+                                alt="Dr. Lucas Maia"
+                                className="w-32 left-3 absolute object-contain block sm:hidden"
+                            />
+                            {/* Desktop: Logo ícone */}
                             <img
                                 src="/images/logos/logo2.png"
                                 alt="Dr. Lucas Maia"
-                                className="w-12 h-12 object-contain"
+                                className="w-12 h-12 object-contain hidden sm:block"
                             />
                         </div>
                         <div className="hidden sm:block">

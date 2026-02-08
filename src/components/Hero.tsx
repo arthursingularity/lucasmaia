@@ -76,7 +76,7 @@ export default function Hero() {
                             {/* Video container - Aspect ratio 9:16 para vídeo vertical */}
                             <div
                                 className="relative rounded-2xl overflow-hidden shadow-2xl border-2 border-white/10 mx-auto cursor-pointer group"
-                                style={{ aspectRatio: '9/16', maxHeight: '550px', maxWidth: '310px' }}
+                                style={{ aspectRatio: '9/16', maxHeight: '580px', maxWidth: '350px' }}
                                 onClick={() => setIsVideoPlaying(true)}
                             >
                                 {isVideoPlaying && vslVideoUrl ? (
