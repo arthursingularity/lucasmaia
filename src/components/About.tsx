@@ -51,10 +51,10 @@ export default function About() {
 
                         <div className="space-y-4 mb-8">
                             <p className="body-lg">
-                                Sou fisioterapeuta graduado pela Universidade Norte do Paraná, com pós-graduação em Terapia Intensiva no Adulto, Fisioterapia Traumato-Ortopédica e Quiropraxia.
+                                Sou fisioterapeuta <span className="text-accent">graduado</span> pela Universidade Norte do Paraná, com <span className="text-accent">pós-graduação</span> em Terapia Intensiva no Adulto, Fisioterapia Traumato-Ortopédica e Quiropraxia.
                             </p>
                             <p className="body-lg">
-                                Atuo com foco no tratamento das dores da coluna e das disfunções musculoesqueléticas, utilizando uma abordagem individualizada e baseada em movimento.
+                                Atuo com foco no <span className="text-accent">tratamento das dores da coluna</span> e das disfunções musculoesqueléticas, utilizando uma abordagem individualizada e baseada em movimento.
                             </p>
                             <p className="body-lg">
                                 Possuo formação específica no tratamento de hérnia de disco pelo método TMA, além de conhecimento e aplicação clínica das técnicas de McKenzie e Mulligan, amplamente utilizadas na reabilitação da coluna e no controle da dor.
