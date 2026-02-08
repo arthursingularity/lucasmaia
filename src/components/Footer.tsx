@@ -124,9 +124,6 @@ export default function Footer() {
                         <p className="caption text-white/50 text-center sm:text-left">
                             © {currentYear} Dr. Lucas Maia - Fisioterapeuta. Todos os direitos reservados.
                         </p>
-                        <p className="caption text-white/50">
-                            CREFITO-4: 292009-F
-                        </p>
                     </div>
                 </div>
             </div>
