@@ -21,54 +21,11 @@ const conditions = [
         details: 'Utilizamos uma combinação de técnicas manuais, recursos específicos como a flexo-distração, ajustes mecânicos quando indicados e exercícios direcionados, sempre respeitando o momento do seu corpo.',
         featured: true,
     },
-    {
-        id: 'lombar',
-        title: 'Dor lombar',
-        description: 'Dor na região lombar, que pode ser aguda ou crônica, afetando significativamente a qualidade de vida e as atividades do dia a dia.',
-        treatment: 'Avaliação do movimento, estabilização, melhora da mobilidade e controle de sobrecargas do dia a dia.',
-        featured: false,
-    },
-    {
-        id: 'ciatica',
-        title: 'Dor ciática',
-        description: 'Dor que irradia para a perna por irritação do nervo ciático, podendo causar formigamento, dormência e fraqueza.',
-        treatment: 'Redução da irritação neural, ajustes de movimento e exercícios progressivos.',
-        featured: false,
-    },
-    {
-        id: 'degenerativa',
-        title: 'Doença degenerativa da coluna',
-        description: 'Alterações naturais do envelhecimento dos discos e articulações da coluna que podem causar dor e limitações.',
-        treatment: 'Controle de sintomas, melhora da função e prevenção de crises.',
-        featured: false,
-    },
-    {
-        id: 'estenose',
-        title: 'Estenose de canal',
-        description: 'Estreitamento do canal vertebral, condição mais comum em idosos, que pode comprimir estruturas nervosas.',
-        treatment: 'Melhora da mobilidade, fortalecimento e estratégias para reduzir dor no dia a dia.',
-        featured: false,
-    },
-    {
-        id: 'cervicalgia',
-        title: 'Cervicalgia (dor no pescoço)',
-        description: 'Dor e rigidez na cervical, muitas vezes relacionada a sobrecarga, postura prolongada e tensão muscular.',
-        treatment: 'Liberação de tensões, ajuste de movimento e exercícios para estabilidade cervical.',
-        featured: false,
-    },
-    {
-        id: 'osteoartrose',
-        title: 'Osteoartrose da coluna',
-        description: 'Desgaste das articulações da coluna, condição que pode causar dor, rigidez e limitação de movimentos.',
-        treatment: 'Controle da dor, ganho de mobilidade e fortalecimento para proteger as articulações.',
-        featured: false,
-    },
 ];
 
 export default function Conditions() {
     const [activeCondition, setActiveCondition] = useState<string | null>('hernia');
     const featuredCondition = conditions.find(c => c.id === 'hernia');
-    const otherConditions = conditions.filter(c => !c.featured);
 
     return (
         <section id="condicoes" className="section-padding bg-[var(--surface)]">
@@ -155,39 +112,6 @@ export default function Conditions() {
                         </div>
                     </div>
                 )}
-
-                {/* Other conditions */}
-                <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {otherConditions.map((condition) => (
-                        <div
-                            key={condition.id}
-                            className={`condition-card card cursor-pointer transition-all ${activeCondition === condition.id ? 'ring-2 ring-[var(--accent)]' : ''
-                                }`}
-                            onClick={() => setActiveCondition(activeCondition === condition.id ? null : condition.id)}
-                        >
-                            <h3 className="heading-5 text-[var(--primary)] mb-3 pl-4">
-                                {condition.title}
-                            </h3>
-                            <div className="pl-4">
-                                <p className="body-sm text-[var(--muted)] mb-4">
-                                    <span className="font-semibold text-[var(--foreground)]">O que é:</span> {condition.description}
-                                </p>
-                                <div className={`overflow-hidden transition-all duration-300 ${activeCondition === condition.id ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0'
-                                    }`}>
-                                    <p className="body-sm text-[var(--muted)] pt-4 border-t border-gray-100">
-                                        <span className="font-semibold text-[var(--foreground)]">Como tratamos:</span> {condition.treatment}
-                                    </p>
-                                </div>
-                                <button className="text-[var(--accent)] body-sm font-semibold mt-2 flex items-center gap-1 hover:gap-2 transition-all">
-                                    {activeCondition === condition.id ? 'Ver menos' : 'Ver mais'}
-                                    <svg className={`w-4 h-4 transition-transform ${activeCondition === condition.id ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                    ))}
-                </div>
             </div>
         </section>
     );

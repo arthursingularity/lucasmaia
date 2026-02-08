@@ -74,7 +74,7 @@ const mainLinks = [
         iconClass: 'whatsapp',
         title: 'WhatsApp',
         description: 'Fale comigo diretamente',
-        href: 'https://wa.me/5531992061999',
+        href: 'https://wa.me/5531993110555',
         external: true,
     },
     {
@@ -91,8 +91,8 @@ const mainLinks = [
         icon: InstagramIcon,
         iconClass: 'instagram',
         title: 'Instagram',
-        description: '@drlucasmaia.fisio',
-        href: 'https://instagram.com/drlucasmaia.fisio',
+        description: '@dr.lucasmaia_',
+        href: 'https://instagram.com/dr.lucasmaia_',
         external: true,
     },
     {
@@ -100,8 +100,8 @@ const mainLinks = [
         icon: PhoneIcon,
         iconClass: 'phone',
         title: 'Telefone',
-        description: '(31) 99206-1999',
-        href: 'tel:+5531992061999',
+        description: '(31) 99311-0555',
+        href: 'tel:+5531993110555',
         external: false,
     },
     {
@@ -122,9 +122,9 @@ VERSION:3.0
 FN:Dr. Lucas Maia
 N:Maia;Lucas;;;Dr.
 TITLE:Fisioterapeuta - Especialista em Coluna Vertebral
-TEL;TYPE=CELL:+5531992061999
-EMAIL:contato@drlucasmaia.com.br
-URL:https://drlucasmaia.com.br
+TEL;TYPE=CELL:+5531993110555
+EMAIL:lucasmaia.fisio@gmail.com
+URL:https://www.lucasmaiafisio.com.br/
 ADR;TYPE=WORK:;;Belo Horizonte;MG;;Brasil
 NOTE:Fisioterapeuta especialista em coluna vertebral, dor crônica e reabilitação.
 END:VCARD`;
@@ -210,8 +210,11 @@ END:VCARD`;
                 {/* Footer */}
                 <div className="cartao-footer">
                     <div className="cartao-logo">
-                        <span className="cartao-logo-l">L</span>
-                        <span className="cartao-logo-m">M</span>
+                        <img
+                            src="/images/logos/SECUNDARIA 03(1).png"
+                            alt="Dr. Lucas Maia"
+                            className="cartao-logo-img"
+                        />
                     </div>
                 </div>
             </div>

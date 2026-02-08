@@ -35,8 +35,12 @@ export default function Header() {
                 <div className="flex items-center justify-between">
                     {/* Logo */}
                     <Link href="#home" className="flex items-center gap-3">
-                        <div className="w-12 h-12 rounded-full overflow-hidden gradient-accent flex items-center justify-center">
-                            <img src="/images/fotoprincipal.jpg" className="w-[100px] h-[100px] object-cover mt-[40px]" />
+                        <div className="w-12 h-12 flex items-center justify-center">
+                            <img
+                                src="/images/logos/logo2.png"
+                                alt="Dr. Lucas Maia"
+                                className="w-12 h-12 object-contain"
+                            />
                         </div>
                         <div className="hidden sm:block">
                             <p className="text-white font-semibold text-lg">Dr. Lucas Maia</p>

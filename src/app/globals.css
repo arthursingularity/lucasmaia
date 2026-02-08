@@ -1049,25 +1049,15 @@ body {
 
 .cartao-logo {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
-  font-family: var(--font-display), Georgia, serif;
   margin-bottom: 1rem;
 }
 
-.cartao-logo-l {
-  font-size: 3rem;
-  font-weight: 700;
-  color: #c28433;
-  line-height: 1;
-}
-
-.cartao-logo-m {
-  font-size: 2rem;
-  font-weight: 400;
-  color: rgba(255, 255, 255, 0.9);
-  line-height: 1;
-  margin-left: -0.2rem;
+.cartao-logo-img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
 }
 
 .cartao-footer-text {

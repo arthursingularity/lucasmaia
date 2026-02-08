@@ -1,14 +1,5 @@
 import Image from 'next/image';
 
-const qualifications = [
-    'Fisioterapia pela Universidade Norte do Paraná',
-    'Pós-graduação em Terapia Intensiva no Adulto',
-    'Pós-graduação em Fisioterapia Traumato-Ortopédica',
-    'Pós-graduação em Quiropraxia',
-    'Formação em Hérnia de Disco pelo Método TMA',
-    'Técnicas McKenzie e Mulligan',
-];
-
 export default function About() {
     return (
         <section id="sobre" className="section-padding bg-[var(--surface)]">
@@ -71,23 +62,6 @@ export default function About() {
                             <p className="body-lg font-semibold">
                                 Meu objetivo é ir além do alívio momentâneo dos sintomas, buscando identificar a causa da dor, melhorar a função e devolver segurança ao movimento no dia a dia.
                             </p>
-                        </div>
-
-                        {/* Qualifications */}
-                        <div className="bg-white rounded-2xl p-6 shadow-lg">
-                            <h3 className="heading-4 text-[var(--primary)] mb-4">Formação e Qualificações</h3>
-                            <ul className="grid sm:grid-cols-2 gap-3">
-                                {qualifications.map((qualification, index) => (
-                                    <li key={index} className="flex items-center gap-2">
-                                        <div className="flex-shrink-0 w-5 h-5 rounded-full gradient-accent flex items-center justify-center mt-0.5">
-                                            <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
-                                                <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                                            </svg>
-                                        </div>
-                                        <span className="body-sm text-[var(--muted)]">{qualification}</span>
-                                    </li>
-                                ))}
-                            </ul>
                         </div>
                     </div>
                 </div>
