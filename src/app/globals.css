@@ -587,10 +587,10 @@ body {
 /* Floating WhatsApp Button */
 .whatsapp-float {
   position: fixed;
-  bottom: 2rem;
+  bottom: 4.5rem;
   right: 2rem;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -603,6 +603,27 @@ body {
 .whatsapp-float:hover {
   transform: scale(1.1);
   box-shadow: 0 6px 30px rgba(37, 211, 102, 0.6);
+}
+
+.instagram-float {
+  position: fixed;
+  bottom: 1rem;
+  right: 2rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  background: linear-gradient(135deg, #F58529, #DD2A7B, #8134AF);
+}
+
+.instagram-float:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 30px rgba(221, 42, 123, 0.6);
 }
 
 /* Condition cards */
