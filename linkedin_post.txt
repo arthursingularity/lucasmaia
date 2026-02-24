@@ -1,0 +1,62 @@
+Aqui estão algumas opções de textos para sua publicação no LinkedIn sobre este projeto. Escolha a que melhor se adapta ao seu estilo!
+
+---
+
+💡 OPÇÃO 1: Foco em Design e Resultados (Recomendada)
+
+Mais um projeto entregue com muito orgulho! 🚀
+
+Tive o prazer de desenvolver a nova landing page para o Dr. Lucas Maia, focada em tratamentos especializados para dores na coluna. O objetivo aqui foi unir um design premium e elegante com uma experiência de usuário (UX) focada em conversão.
+
+🔹 O que foi implementado:
+- Design responsivo: Experiência impecável tanto no mobile quanto no desktop.
+- UI Moderna: Uso de elementos glassmorphism, gradientes e animações sutis para passar confiança e modernidade.
+- Foco em Performance: Construída com Next.js e Tailwind CSS para garantir carregamento rápido e fluidez.
+- Estrutura Otimizada: Seções estratégicas com integração de vídeo VSL para maximizar contatos e agendamentos.
+
+O resultado é uma vitrine digital que reflete a qualidade e o profissionalismo do atendimento do Dr. Lucas. 
+
+Confira o resultado nas imagens! O que acharam do visual? 👇
+
+#DesenvolvimentoWeb #Nextjs #React #TailwindCSS #Frontend #WebDesign #UIUX #LandingPage
+
+---
+
+💡 OPÇÃO 2: Foco Técnico e Profissional (Ideal para atrair recrutadores e outros devs)
+
+Acabo de finalizar mais um projeto incrível: uma landing page de alta performance para a clínica do Dr. Lucas Maia! 💻✨
+
+Neste projeto, o desafio era criar uma interface que combinasse sofisticação com altíssima performance. Para isso, escolhi uma stack moderna e robusta:
+
+🛠️ Tecnologias utilizadas:
+- Next.js (App Router) & React 19 para renderização rápida e SEO otimizado;
+- Tailwind CSS v4 para uma estilização ágil e consistente;
+- TypeScript para tipagem estática e código mais seguro;
+- Componentização eficiente para manter o código escalável.
+
+Destaques do projeto incluem a integração de vídeos otimizados (VSL), design totalmente responsivo e micro-interações que melhoram a experiência do usuário, como o "glow" sincronizado e o alinhamento preciso dos elementos visuais.
+
+Muito satisfeito com o resultado final, que entrega não apenas beleza, mas performance real.
+
+#DesenvolvimentoWeb #Nextjs #Reactjs #TypeScript #TailwindCSS #FrontendDeveloper #Programação
+
+---
+
+💡 OPÇÃO 3: Mais curta e direta
+
+Novo projeto no ar! 🚀 Muito feliz em compartilhar a landing page desenvolvida para o Dr. Lucas Maia.
+
+O foco principal foi criar uma página com visual premium e de alta conversão para o seu trabalho com fisioterapia especializada e dores na coluna. A página é ágil, completamente responsiva e pensada para converter visitantes em pacientes.
+
+Principais tecnologias: Next.js, React, Tailwind CSS e TypeScript.
+
+Gostou do resultado? Conta pra mim nos comentários! 👇
+
+#WebDev #Frontend #LandingPage #ReactJS #NextJS #TailwindCSS #Portfolio
+
+---
+
+DICAS PARA O POST:
+- Adicione o link real do site se ele já estiver no ar (ex: "Acesse para conferir: www.link.com.br").
+- Lembre-se de marcar/mencionar o Dr. Lucas Maia na publicação se ele tiver LinkedIn.
+- Além dessa imagem que você me mandou, você pode colocar um pequeno GIF ou vídeo navegando pela página, isso chama muita atenção no LinkedIn!

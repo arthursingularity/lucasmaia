@@ -68,15 +68,17 @@ export default function Hero() {
                     </div>
 
                     {/* VSL Video */}
-                    <div className="relative animate-fade-in animation-delay-300">
-                        <div className="relative">
-                            {/* Decorative ring */}
-                            <div className="absolute -inset-4 bg-gradient-to-br from-[var(--accent)]/20 to-transparent rounded-3xl blur-2xl"></div>
+                    <div className="relative animate-fade-in animation-delay-300 w-full flex justify-center">
+                        <div
+                            className="relative w-full"
+                            style={{ aspectRatio: '9/16', maxHeight: '580px', maxWidth: '350px' }}
+                        >
+                            {/* Decorative glow underneath aligned to the card */}
+                            <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 w-4/5 h-[60%] bg-[var(--accent)]/40 rounded-full blur-[60px] pointer-events-none z-0"></div>
 
                             {/* Video container - Aspect ratio 9:16 para vídeo vertical */}
                             <div
-                                className="relative rounded-2xl overflow-hidden shadow-2xl border-2 border-white/10 mx-auto cursor-pointer group"
-                                style={{ aspectRatio: '9/16', maxHeight: '580px', maxWidth: '350px' }}
+                                className="absolute inset-0 rounded-2xl overflow-hidden shadow-2xl border-2 border-white/10 cursor-pointer group z-10"
                                 onClick={() => setIsVideoPlaying(true)}
                             >
                                 {isVideoPlaying && vslVideoUrl ? (
