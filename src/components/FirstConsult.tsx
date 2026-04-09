@@ -81,7 +81,7 @@ export default function FirstConsult() {
 
                     {/* CTA Card */}
                     <div className="relative">
-                        <div className="bg-white rounded-3xl p-8 sm:p-10 shadow-2xl">
+                        <div className="bg-white rounded-[65px] p-8 sm:p-10 shadow-2xl">
                             <div className="text-center mb-8">
                                 <div className="inline-flex items-center justify-center w-20 h-20 rounded-xl bg-accent mb-6">
                                     <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">

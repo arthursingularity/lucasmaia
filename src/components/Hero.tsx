@@ -37,10 +37,12 @@ export default function Hero() {
                     {/* Content */}
                     <div className="text-white">
                         {/* Main headline */}
-                        <h1 className="display-1 text-white mb-6 animate-fade-in-up animation-delay-100">
+                        <h1 className="display-1 cursor-pointer text-white mb-6 animate-fade-in-up animation-delay-100">
                             Tratamento especializado para{' '}
                             <span className="text-gradient">dores na coluna</span>
                         </h1>
+
+                        
 
                         {/* Tagline */}
                         <p className="heading-3 text-white/90 font-light mb-4 animate-fade-in-up animation-delay-200">

@@ -103,7 +103,7 @@ export default function ForWho() {
                         Não encontrou sua condição? Entre em contato e tire suas dúvidas.
                     </p>
                     <a
-                        href="#contato"
+                        href="https://wa.me/553193110555"
                         className="inline-flex btn-primary text-center justify-center gap-2 text-[var(--accent)] font-semibold hover:text-[var(--accent-dark)] transition-colors"
                     >
                         <span>Falar com o Dr. Lucas</span>

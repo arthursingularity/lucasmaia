@@ -133,7 +133,7 @@ export default function HowItWorks() {
                             <p className="body-lg text-white/80 mb-8">
                                 O objetivo é ir além do alívio momentâneo dos sintomas, buscando identificar a causa da dor, melhorar a função e devolver segurança ao movimento no dia a dia.
                             </p>
-                            <a href="#contato" className="btn-primary bg-white !text-[var(--primary)]">
+                            <a href="https://wa.me/553193110555" className="btn-primary bg-white !text-[var(--primary)]">
                                 Agendar Avaliação
                             </a>
                         </div>
